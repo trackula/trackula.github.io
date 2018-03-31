@@ -54,7 +54,7 @@ project's **Settings**.
 
 You'll need to configure your site too: change this line
 in your `config.toml`, from `"https://pages.gitlab.io/hugo/"` to `baseurl = "https://namespace.gitlab.io"`.
-Proceed equaly if you are using a [custom domain][post]: `baseurl = "http(s)://example.com"`.
+Proceed equally if you are using a [custom domain][post]: `baseurl = "http(s)://example.com"`.
 
 Read more about [user/group Pages][userpages] and [project Pages][projpages].
 
