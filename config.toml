@@ -1,9 +1,9 @@
-baseurl = "https://trackula.gitlab.io/blog.trackula.org"
+baseurl = "https://trackula.gitlab.io/blog.trackula.org/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 title = "Trackula Blog"
-canonifyurls  = false
+canonifyurls  = true
 
 DefaultContentLanguage = "en"
 theme = "nederburg"
