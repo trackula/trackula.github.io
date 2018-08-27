@@ -1,4 +1,4 @@
-baseurl = "https://pages.gitlab.com/trackula/blog.trackula.org"
+baseurl = "https://trackula.gitlab.io/blog.trackula.org"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
