@@ -1,12 +1,12 @@
-baseurl = "https://pages.gitlab.io/hugo/"
+baseurl = "https://pages.gitlab.com/trackula/blog.trackula.org"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Beautiful Hugo"
-canonifyurls  = true
+title = "Trackula Blog"
+canonifyurls  = false
 
 DefaultContentLanguage = "en"
-theme = "beautifulhugo"
+theme = "nederburg"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
@@ -14,11 +14,11 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "Hugo Blog Template for GitLab Pages"
+  subtitle = "Trackula.org"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
+  dateFormat = "2006-02-31"
+  commit = true
   rss = true
   comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
