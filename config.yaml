@@ -1,0 +1,92 @@
+baseurl: "https://trackula.gitlab.io/blog.trackula.org/"
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+title: "Trackula Blog"
+canonifyurls: true
+
+DefaultContentLanguage: "en"
+defaultContentLanguageInSubdir: true
+
+theme: "trackula"
+enableGitInfo: true
+metaDataFormat: "yaml"
+pygmentsUseClasses: true
+pygmentCodeFences: true
+
+outputs:
+home: ["HTML", "RSS"] # TODO: Add AMP
+page: ["HTML", "JSON"] # TODO: Add AMP
+
+languages:
+  en:
+    title: "Trackula"
+    weight: 1
+    languagecode: "en"
+    params:
+      linkedin: "https://linkedin.com/trackula"
+  es:
+    title: "Trackula"
+    weight: 2
+    languagecode: "es"
+
+
+Params:
+  subtitle: "Trackula.org"
+  slogan: "Watching them watch us"
+  logo: "img/avatar-icon.png"
+  favicon: "img/favicon.ico"
+  dateFormat: "2006-02-31"
+  # copyright: "This work is licensed under a Creative Commons Attribution 4.0 International license."
+  commit: true
+  rss: true
+  comments: true
+#  gcse: "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+  Social:
+    twitter: "https://twitter.com/trackula_"
+    github: "https://github.com/trackula"
+    gitlab: "https://gitlab.com/trackula"
+
+#[[Params.bigimg]]
+#  src: "img/triangle.jpg"
+#  desc: "Triangle"
+#[[Params.bigimg]]
+#  src: "img/sphere.jpg"
+#  desc: "Sphere"
+#[[Params.bigimg]]
+#  src: "img/hexagon.jpg"
+#  desc: "Hexagon"
+
+Author:
+  name: "Some Person"
+  email: "youremail@domain.com"
+  facebook: "username"
+  googleplus: "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  gitlab: "username"
+  github: "username"
+  twitter: "username"
+  reddit: "username"
+  linkedin: "username"
+  xing: "username"
+  stackoverflow: "users/XXXXXXX/username"
+  snapchat: "username"
+  instagram: "username"
+  youtube: "user/username" # or channel/channelname
+  soundcloud: "username"
+  spotify: "username"
+  bandcamp: "username"
+  itchio: "username"
+
+
+menus:
+  main:
+  - name: "Latest news"
+    url: ""
+    weight: 1
+  - name: "About us"
+    url: "page/about/"
+    weight: 3
+  - name: "Tagged"
+    url: "tags"
+    weight: 3

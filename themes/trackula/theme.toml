@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Trackula"
+license = "MIT"
+licenselink = "https://gitlab.com/trackula/blog.trackula.org/blob/master/themes/trackula/LICENSE"
+description = "The Hugo theme for the Trackula landing and blog"
+homepage = "https://gitlab.com/trackula/blog.trackula.org/blob/master/themes/trackula/"
+tags = ["hacktivism", "responsive", "blog"]
+features = ["gravatar", "responsive", "piwik", "multiple-authors"]
+min_version = 0.34
+
+[author]
+  name = "Santiago Saavedra"
+  homepage = "https://ssaavedra.eu"

@@ -1,0 +1,29 @@
+<footer id="site-footer" class="site-footer" role="contentinfo">
+	<h1><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a></h1>
+
+	{{ with .Site.Params.Slogan }}
+	<p class="site-description">{{ . | default "" | safeHTML }}</p>
+	<p class="established-since">Est. 2017</p>
+	{{ end }}
+
+	<div id="menu-footer" class="menu-container menu-footer" role="navigation">
+		<div class="menu">
+
+			<ul id="menu-footer-items" class="menu-footer-items">
+				{{ range $name, $taxonomy := .Site.Params.Navlinks }}
+				<li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a href="/{{ $taxonomy.url | urlize }}">{{ $taxonomy.name }}</a></li>
+				{{ end }}
+			</ul>
+
+		</div>	</div>
+
+		<ul class="social-media-icons">
+			{{ partial "socialtags.html" . }}
+		</ul>
+		<div class="copyright">
+			{{ if .Site.Params.copyright }}
+			<p>{{ .Site.Params.copyright | markdownify }}</p>
+			{{ end }}
+		</div>
+</footer>
+

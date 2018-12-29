@@ -1,0 +1,328 @@
+/* your styles go here */
+@charset "UTF-8";
+/*
+Theme Name: Trackula
+Theme URI: ND
+Author: Santiago Saavedra
+Author URI: https://ssaavedra.eu
+Description: A bold, dark, and responsive theme.
+Version: 0.10
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Trackula Custom Theme for Hugo, Copyright 2018 Santiago Saavedra
+Trackula Theme is distributed under the terms of the GNU GPL
+*/
+
+.skip-content {
+  position: absolute;
+  width: 100%;
+  background: #111;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 0.375em;
+  top: -4.5em;
+  z-index: 19;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.skip-content:active, .skip-content:focus {
+  top: 0;
+  color: #ffffff;
+}
+
+body {
+  height: 100%;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "raleway", sans-serif;
+  line-height: 1.5;
+  color: #dedede;
+  background: #222;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+}
+.overflow-container {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Lato", sans-serif;
+}
+
+p {
+  margin: 1.5em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #be3f2c;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+ a:hover, a:focus {
+  color: white;
+}
+
+a:visited, a:active {
+  color: #be3f2c;
+}
+
+
+.site-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.85;
+  color: #dedede;
+  text-transform: uppercase;
+  font-family: "LatoWeb", sans-serif;
+}
+
+.site-title a {
+	color: inherit;
+}
+
+
+article a {
+  text-decoration: underline;
+}
+
+
+img {
+  height: auto;
+  line-height: 0;
+}
+
+.singular-attachment img {
+  max-width: 100%;
+}
+
+input[type="search"] {
+  margin-right: 1.5em;
+  padding-right: 0.375em;
+  /* so safari 'x' doesn't get cut off */
+}
+
+.screen-reader-text {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  html {
+    -webkit-text-size-adjust: none;
+    /* none for no scaling */
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  html {
+    -webkit-text-size-adjust: none;
+    /* none for no scaling */
+  }
+}
+.site-header {
+  padding: 0.75em 5.55%;
+}
+.site-header .container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.site-header:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.menu-primary {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  padding-top: 6em;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 19;
+  background-image: -webkit-linear-gradient(#222 26px, transparent 24px, transparent 24px);
+  background-image: linear-gradient(#222 26px, transparent 24px, transparent 24px);
+  background-size: 1px 48px;
+  /* this is a 24px baseline grid */
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+@media all and (max-width: 50em) {
+	.menu-primary .site-description { display: none }
+	
+	.menu-primary {
+		position: inherit;
+		padding-top: 0px;
+		text-align: left;
+	}
+	
+	.menu-primary {
+		border-bottom: 1px dashed #dedede;
+		font-size: 0.813em;
+		line-height: 1.85;
+	}
+}
+
+/* 800px */
+@media all and (min-width: 50em) {
+  .menu-primary, .menu-primary {
+    background: none;
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    min-height: 37px;
+  }
+  .menu-primary .site-description, .menu-primary .site-description {
+    float: left;
+    opacity: 0.8;
+	margin: 0;
+  }
+  .menu-primary .site-description + div, .menu-primary .site-description + div {
+    margin-bottom: 0.75em;
+  }
+
+  .ie9 .site-description {
+    left: 5.55%;
+  }
+  
+  .menu-primary-items li,
+  .menu-primary-items a {
+    display: inline-block;
+  }
+  .menu-primary-items li {
+    position: relative;
+  }
+  .menu-primary-items > li {
+    font-size: 0.813em;
+    line-height: 1.85;
+  }
+  .menu-primary-items > li:after {
+    content: '/';
+    position: absolute;
+    right: -6px;
+    top: 0;
+    color: white;
+    opacity: 0.6;
+  }
+  .menu-primary-items > li:last-child:after {
+    display: none;
+  }
+  .menu-primary-items > li:last-child a {
+    margin-right: 0;
+  }
+  .menu-primary-items a {
+    opacity: 0.6;
+    margin: 0 0.75em;
+  }
+  .menu-primary-items a:only-child {
+    margin: 0 0.75em;
+  }
+  .menu-primary-items ul {
+    position: absolute;
+    top: -9999px;
+    opacity: 0;
+    left: -70%;
+    right: -70%;
+    min-width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    background: #111;
+    text-align: center;
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  .menu-primary-items ul li,
+  .menu-primary-items ul a {
+    display: block;
+  }
+}
+
+/* === MAIN === */
+.blog .main,
+.post .main,
+.archive .main,
+.search .main {
+  width: 88.89%;
+  max-width: 820px;
+  padding-bottom: 1.5em;
+  margin: 0 auto;
+}
+
+.excerpt, .entry {
+	padding: 1em;
+	border-radius: 2px;
+    position: relative;
+    clear: both;
+    margin-bottom: 1.5em;
+    opacity: 0.8;
+}
+
+.loop-container > .excerpt:nth-child(odd) {
+	background-color: #333;
+}
+
+.loop-container > .excerpt:nth-child(even) {
+	background-color: #444;
+}
+
+
+/* === FOOTER === */
+
+.site-footer {
+  color: #8c8c8c;
+  text-align: center;
+  padding-top: 3em;
+  overflow: hidden;
+  clear: both;
+}
+.site-footer a {
+  color: #8c8c8c;
+}
+
+.site-footer a:hover {
+  color: #be3f2c;
+}
+
+.site-footer ul.social-media-icons {
+	list-style: none;
+	padding: 0;
+	font-size: 125%;
+}
+
+.site-footer ul.social-media-icons > li {
+	display: inline-block;
+	padding: 0 4px 0 4px;
+}
+
+
+
