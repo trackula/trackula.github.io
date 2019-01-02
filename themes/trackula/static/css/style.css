@@ -14,6 +14,12 @@ Trackula Custom Theme for Hugo, Copyright 2018 Santiago Saavedra
 Trackula Theme is distributed under the terms of the GNU GPL
 */
 
+@import url("./highlight.min.css");
+@import url("./monokai.ssr.css");
+@import url("./monokai.hljs.css");
+@import url("./katex.min.css");
+
+
 .skip-content {
   position: absolute;
   width: 100%;

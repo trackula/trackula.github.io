@@ -8,6 +8,7 @@ canonifyurls: true
 DefaultContentLanguage: "en"
 defaultContentLanguageInSubdir: true
 
+xtheme: "beautifulhugo"
 theme: "trackula"
 enableGitInfo: true
 metaDataFormat: "yaml"

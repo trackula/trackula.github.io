@@ -33,7 +33,7 @@ The following is a code sample using the "highlight" shortcode provided in Hugo.
 
 And here is the same code with line numbers:
 
-{{< highlight javascript "linenos=inline">}}
+{{< highlight javascript "linenos=table">}}
     var num1, num2, sum
     num1 = prompt("Enter first number")
     num2 = prompt("Enter second number")
