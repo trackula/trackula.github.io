@@ -100,9 +100,12 @@ menus:
   - name: "Latest news"
     url: ""
     weight: 1
+  - name: "Trackula for Web"
+    url: "page/landing-plugin/"
+    weight: 3
   - name: "About us"
     url: "page/about/"
-    weight: 3
-  - name: "Tagged"
+    weight: 5
+  - name: "Tags"
     url: "tags"
-    weight: 3
+    weight: 6
