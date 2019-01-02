@@ -42,6 +42,7 @@ Params:
   commit: true
   rss: true
   comments: true
+  languages: [en, es]
 #  gcse: "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
   Social:

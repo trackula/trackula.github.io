@@ -194,6 +194,21 @@ input[type="search"] {
 	}
 }
 
+@media all and (max-width: 50em) {
+	.menu-translations {
+		position: inherit;
+		padding-top: 0px;
+		text-align: left;
+	}
+	
+	.menu-translations {
+		border-bottom: 1px dashed #dedede;
+		font-size: 0.813em;
+		line-height: 1.85;
+	}
+}
+
+
 /* 800px */
 @media all and (min-width: 50em) {
   .menu-primary, .menu-primary {
@@ -271,6 +286,20 @@ input[type="search"] {
   .menu-primary-items ul a {
     display: block;
   }
+
+  .menu-translations {
+	  opacity: 0.8;
+	  font-size: 85%;
+	  line-height: 0;
+  }
+  .menu-translations ul {
+	  list-decoration: none;
+	  display: inline-block;
+	  padding: 0;
+  }
+	.menu-translations li {
+		display: inline-block;
+	}
 }
 
 /* === MAIN === */

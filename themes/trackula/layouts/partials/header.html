@@ -28,6 +28,19 @@
         </li>
         {{ end }}
       </ul>
+	
+		<div class="menu-translations">
+		{{ if .IsTranslated }}
+		{{ i18n "AlsoAvailableIn" }}
+		<ul>
+		{{ range .Translations }}
+			<li class="menu-item">
+			  <a href="{{ .Permalink | relURL }}">{{ .Lang | upper }}: {{ .Title | default .Site.Title }}</a>
+			</li>
+		{{ end }}
+		</ul>
+		{{ end }}
+		</div>
     </div>
 
   </div>
