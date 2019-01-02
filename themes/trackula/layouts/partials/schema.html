@@ -1,3 +1,12 @@
+{{- $authorIdx := .Params.author | default "trackula" -}}
+{{- $authors := .Site.Params.Authors -}}
+{{- $author := index $authors $authorIdx -}}
+{{- $creator := index $authors (.Params.creator | default $authorIdx ) -}}
+{{- $acctable := index $authors (.Params.accountablePerson | default "trackula" ) -}}
+{{- $publisher := index $authors (.Params.publisher | default "trackula" ) -}}
+{{- $copyrightHolder := index $authors (.Params.copyrightPerson | default "trackula" ) -}}
+{{- $license := .Page.Params.license | default .Site.Params.license -}}
+
 <script type="application/ld+json">
     {
         "@context" : "http://schema.org",
@@ -7,16 +16,17 @@
              "@id": "{{ .Site.BaseURL }}"
         },
         "articleSection" : "{{ .Section }}",
-        "name" : "{{ .Title }}",
+        "name" : "{{ .Title | default "Trackula Blog" }}",
         "headline" : "{{ .Title }}",
-        "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ end }}{{ end }}",
+        "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary | plainify }}{{ else }}Watching them watch us{{ end }}{{ end }}",
         "inLanguage" : "en",
-        "author" : "{{ .Page.Params.author }}",
-        "creator" : "{{ .Page.Params.author }}",
-        "publisher": "{{ .Page.Params.author }}",
-        "accountablePerson" : "{{ .Page.Params.author }}",
-        "copyrightHolder" : "{{ .Page.Params.author }}",
+        "author" : "{{ $author.name }}",
+        "creator" : "{{ $creator.name }}",
+        "publisher": "{{ $publisher.name }}",
+        "accountablePerson" : "{{ $acctable.name }}",
+        "copyrightHolder" : "{{ $copyrightHolder.name }}",
         "copyrightYear" : "{{ .Date.Format "2006" }}",
+		"license": "{{ $license }}",
         "datePublished": "{{ .Date }}",
         "dateModified" : "{{ .Date }}",
         "url" : "{{ .Permalink }}",

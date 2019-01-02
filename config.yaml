@@ -33,12 +33,12 @@ languages:
 
 
 Params:
-  subtitle: "Trackula.org"
   slogan: "Watching them watch us"
   logo: "img/avatar-icon.png"
   favicon: "img/favicon.ico"
   dateFormat: "2006-02-31"
-  # copyright: "This work is licensed under a Creative Commons Attribution 4.0 International license."
+  copyright: "This work is licensed under a Creative Commons Attribution 4.0 International license."
+  license: https://creativecommons.org/licenses/by/4.0/
   commit: true
   rss: true
   comments: true
@@ -48,6 +48,20 @@ Params:
     twitter: "https://twitter.com/trackula_"
     github: "https://github.com/trackula"
     gitlab: "https://gitlab.com/trackula"
+    
+  Authors:
+    ssaavedra:
+      name: Santiago Saavedra
+      nick: ssaavedra
+      github: ssaavedra
+      gitlab: mapcar
+      twitter: ssice
+    trackula:
+      name: Asociación Cultural Hacktivista Trackula
+      nick: trackula
+      github: trackula
+      gitlab: trackula
+      twitter: trackula_
 
 #[[Params.bigimg]]
 #  src: "img/triangle.jpg"
