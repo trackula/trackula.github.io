@@ -16,16 +16,14 @@ pygmentsUseClasses: true
 pygmentCodeFences: true
 
 outputs:
-home: ["HTML", "RSS"] # TODO: Add AMP
-page: ["HTML", "JSON"] # TODO: Add AMP
+home: ["HTML", "RSS"]
+page: ["HTML", "JSON"]
 
 languages:
   en:
     title: "Trackula"
     weight: 1
     languagecode: "en"
-    params:
-      linkedin: "https://linkedin.com/trackula"
   es:
     title: "Trackula"
     weight: 2
